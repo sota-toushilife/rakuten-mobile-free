@@ -3,361 +3,419 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>毎月のスマホ代をガチで無料にする方法</title>
+<title>【7万円で毎月スマホ代が無料】楽天株主優待を使って通信費をゼロにする方法</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: -apple-system, 'Hiragino Sans', sans-serif;
-  background: linear-gradient(160deg, #d1fae5 0%, #ecfdf5 60%, #f0fdf4 100%);
-  min-height: 100vh;
-  padding: 0 0 40px;
+  background: #f8fafc;
   color: #1e293b;
+  font-size: 15px;
+  line-height: 1.8;
 }
 .container { max-width: 480px; margin: 0 auto; }
 
-.hero {
-  background: linear-gradient(90deg, #059669, #047857);
-  padding: 28px 20px 24px;
+/* ヘッダー */
+.header {
+  background: linear-gradient(135deg, #065f46, #059669);
+  padding: 24px 20px 20px;
   text-align: center;
 }
-.hero-eyebrow { color: rgba(255,255,255,0.85); font-size: 11px; font-weight: 700; letter-spacing: 0.1em; margin-bottom: 8px; }
-.hero h1 { color: #fff; font-size: 20px; font-weight: 900; line-height: 1.5; margin-bottom: 10px; }
-.hero-sub { color: rgba(255,255,255,0.85); font-size: 12px; line-height: 1.7; }
+.header .label {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 11px; font-weight: 700;
+  padding: 3px 10px; border-radius: 20px;
+  letter-spacing: 0.08em; margin-bottom: 10px;
+}
+.header h1 {
+  color: #fff;
+  font-size: 18px; font-weight: 900;
+  line-height: 1.5;
+}
+.header h1 span { color: #a7f3d0; }
 
-.intro {
+/* リード文BOX */
+.lead {
   background: #fff;
-  margin: 16px 16px 0;
-  border-radius: 14px;
-  padding: 16px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-  border-left: 4px solid #059669;
-  font-size: 13px;
+  margin: 0;
+  padding: 18px 20px;
+  border-bottom: 3px solid #059669;
+  font-size: 14px;
   line-height: 1.9;
   color: #374151;
 }
-
-.section-label {
-  font-size: 11px; font-weight: 700; color: #64748b;
-  letter-spacing: 0.08em; margin: 16px 16px 8px;
-}
-
-.card {
-  background: #fff;
-  border-radius: 14px;
-  margin: 0 16px 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-}
-.card-header {
-  background: linear-gradient(90deg, #059669, #047857);
-  padding: 12px 16px;
-  display: flex; align-items: center; gap: 10px;
-}
-.card-num {
-  background: rgba(255,255,255,0.25);
-  color: #fff; font-size: 13px; font-weight: 900;
-  width: 28px; height: 28px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0;
-}
-.card-header-text { color: #fff; }
-.card-header-title { font-size: 14px; font-weight: 900; line-height: 1.4; }
-.card-header-sub { font-size: 11px; opacity: 0.85; margin-top: 2px; }
-.card-body { padding: 14px 16px; }
-
-.why-box {
-  background: #fef3c7; border-left: 3px solid #f59e0b;
+.lead .conclusion {
+  background: #ecfdf5;
+  border-left: 4px solid #059669;
+  padding: 12px 14px;
   border-radius: 0 8px 8px 0;
-  padding: 8px 12px; font-size: 12px; color: #92400e;
-  line-height: 1.8; margin-bottom: 12px; font-weight: 700;
+  font-weight: 700;
+  font-size: 14px;
+  color: #065f46;
+  margin-bottom: 12px;
 }
 
-.steps { display: flex; flex-direction: column; gap: 10px; }
-.step { display: flex; gap: 10px; }
-.step-num {
-  min-width: 22px; height: 22px; border-radius: 50%;
-  background: #059669; color: #fff;
-  font-size: 11px; font-weight: 900;
-  display: flex; align-items: center; justify-content: center;
-  flex-shrink: 0; margin-top: 2px;
+/* セクション */
+.section {
+  background: #fff;
+  margin-top: 8px;
+  padding: 20px;
+  border-top: 1px solid #e2e8f0;
 }
-.step-content { font-size: 13px; line-height: 1.7; color: #374151; }
-.step-content b { color: #047857; }
-
-.warn {
-  margin-top: 5px;
-  background: #fef2f2; border-left: 3px solid #f87171;
-  padding: 5px 10px; font-size: 12px; color: #b91c1c;
-  border-radius: 0 6px 6px 0; line-height: 1.7; font-weight: 600;
+.section-heading {
+  font-size: 16px; font-weight: 900;
+  color: #065f46;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #059669;
+  margin-bottom: 14px;
 }
-.ok {
-  margin-top: 5px;
-  background: #f0fdf4; border-left: 3px solid #4ade80;
-  padding: 5px 10px; font-size: 12px; color: #15803d;
-  border-radius: 0 6px 6px 0; line-height: 1.7;
+.section-heading::before {
+  content: "▍";
+  color: #059669;
+  margin-right: 6px;
 }
-.info {
-  margin-top: 5px;
-  background: #fffbeb; border-left: 3px solid #fcd34d;
-  padding: 5px 10px; font-size: 12px; color: #92400e;
-  border-radius: 0 6px 6px 0; line-height: 1.7;
+.body-text {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #374151;
+  margin-bottom: 14px;
 }
 
-/* チャンスBOX */
-.chance-box {
+/* 株価ハイライトBOX */
+.stock-box {
   background: linear-gradient(135deg, #fef3c7, #fde68a);
   border: 2px solid #f59e0b;
-  border-radius: 14px;
-  margin: 0 16px 12px;
+  border-radius: 12px;
   padding: 16px;
+  margin-bottom: 14px;
 }
-.chance-box .chance-title {
-  font-size: 14px; font-weight: 900; color: #92400e;
-  text-align: center; margin-bottom: 10px;
+.stock-box .stock-title {
+  font-size: 13px; font-weight: 900;
+  color: #92400e; margin-bottom: 10px;
+  text-align: center;
 }
-.chance-box img {
-  width: 100%; border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  margin-bottom: 10px;
+.stock-price-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 6px;
 }
-.chance-box .chance-text {
-  font-size: 12px; color: #92400e; line-height: 1.8; font-weight: 700;
+.stock-price-row .s-label { font-size: 13px; color: #78350f; }
+.stock-price-row .s-value { font-size: 20px; font-weight: 900; color: #b45309; }
+.stock-note {
+  font-size: 11px; color: #92400e;
+  background: rgba(255,255,255,0.5); border-radius: 6px;
+  padding: 6px 10px; margin-top: 8px;
+  line-height: 1.7;
 }
 
-/* 計算BOX */
+/* 仕組み説明 */
+.point-box {
+  background: #f0fdf4;
+  border-left: 3px solid #059669;
+  border-radius: 0 8px 8px 0;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  font-size: 13px; line-height: 1.8; color: #065f46; font-weight: 700;
+}
+.warn-box {
+  background: #fef2f2;
+  border-left: 3px solid #f87171;
+  border-radius: 0 8px 8px 0;
+  padding: 8px 14px;
+  margin-top: 8px;
+  font-size: 12px; line-height: 1.8; color: #b91c1c;
+}
+
+/* 計算シミュレーション */
 .calc-box {
-  background: linear-gradient(135deg, #059669, #047857);
-  border-radius: 14px;
-  margin: 0 16px 12px;
+  background: linear-gradient(135deg, #065f46, #059669);
+  border-radius: 12px;
   padding: 18px;
   color: #fff;
+  margin-bottom: 14px;
 }
-.calc-box .calc-title {
-  font-size: 13px; font-weight: 700; opacity: 0.85; margin-bottom: 14px; text-align: center;
-}
+.calc-title { font-size: 13px; opacity: 0.85; margin-bottom: 14px; text-align: center; }
 .calc-row {
   display: flex; justify-content: space-between; align-items: center;
   padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.2);
   font-size: 13px;
 }
 .calc-row:last-child { border-bottom: none; }
-.calc-row .label { opacity: 0.85; }
-.calc-row .value { font-weight: 900; font-size: 15px; }
-.calc-row .value.big { font-size: 20px; color: #fde68a; }
+.calc-row .cl { opacity: 0.85; }
+.calc-row .cv { font-weight: 900; }
+.calc-row .cv.big { font-size: 22px; color: #a7f3d0; }
+
+/* STEP */
+.steps { display: flex; flex-direction: column; gap: 14px; }
+.step {
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.step-num {
+  min-width: 28px; height: 28px;
+  background: #059669; color: #fff;
+  border-radius: 50%; font-size: 13px; font-weight: 900;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.step-content { font-size: 14px; line-height: 1.8; color: #374151; padding-top: 3px; }
+.step-content b { color: #065f46; }
+.step-sub {
+  margin-top: 4px;
+  background: #f0fdf4; border-left: 3px solid #4ade80;
+  padding: 4px 10px; font-size: 12px; color: #15803d;
+  border-radius: 0 6px 6px 0; line-height: 1.7;
+}
+.step-warn {
+  margin-top: 4px;
+  background: #fef2f2; border-left: 3px solid #f87171;
+  padding: 4px 10px; font-size: 12px; color: #b91c1c;
+  border-radius: 0 6px 6px 0; line-height: 1.7; font-weight: 600;
+}
 
 /* 注意事項 */
-.caution-box {
-  background: #fff;
-  border-radius: 14px;
-  margin: 0 16px 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
-}
-.caution-header {
-  background: linear-gradient(90deg, #ef4444, #dc2626);
-  padding: 10px 16px;
-  color: #fff; font-size: 13px; font-weight: 900;
-}
-.caution-body { padding: 14px 16px; }
+.caution-list { display: flex; flex-direction: column; gap: 10px; }
 .caution-item {
-  display: flex; gap: 8px; align-items: flex-start;
-  padding: 6px 0; border-bottom: 1px solid #f1f5f9;
-  font-size: 12px; line-height: 1.7; color: #374151;
+  display: flex; gap: 10px; align-items: flex-start;
+  font-size: 13px; line-height: 1.7; color: #374151;
 }
-.caution-item:last-child { border-bottom: none; }
-.caution-icon { color: #ef4444; font-weight: 900; flex-shrink: 0; margin-top: 2px; }
+.caution-icon { color: #ef4444; font-size: 16px; flex-shrink: 0; margin-top: 1px; }
 
-.line-btn2 {
+/* まとめ */
+.summary-box {
+  background: linear-gradient(135deg, #065f46, #047857);
+  border-radius: 12px;
+  padding: 18px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+.summary-title { font-size: 14px; font-weight: 900; margin-bottom: 12px; text-align: center; }
+.summary-item {
+  display: flex; gap: 8px; align-items: flex-start;
+  font-size: 13px; padding: 7px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+  line-height: 1.6;
+}
+.summary-item:last-child { border-bottom: none; }
+.summary-check { color: #a7f3d0; font-size: 15px; flex-shrink: 0; }
+
+/* CTA */
+.cta {
   display: block; text-align: center;
   background: #06c755; color: #fff;
-  font-size: 15px; font-weight: 900;
-  padding: 16px; border-radius: 12px;
-  text-decoration: none; margin: 0 16px 0;
+  font-size: 16px; font-weight: 900;
+  padding: 18px; border-radius: 12px;
+  text-decoration: none; margin: 0 0 0;
 }
 
 .footer-note {
   text-align: center; font-size: 10px; color: #94a3b8;
   padding: 16px 16px 0; line-height: 1.9;
+  background: #fff;
 }
 </style>
 </head>
 <body>
 <div class="container">
 
-<div class="hero">
-  <div class="hero-eyebrow">📱 SPECIAL METHOD</div>
-  <h1>毎月のスマホ代を<br>ガチで<span style="color:#a7f3d0">無料</span>にする方法</h1>
-  <div class="hero-sub">楽天グループの株を100株買うだけ。<br>約1年9ヶ月で元が取れて、あとはずっと無料！</div>
+<!-- タイトル -->
+<div class="header">
+  <div class="label">📱 投資×節約テクニック</div>
+  <h1>7万円で毎月スマホ代が<span>永久に無料</span>になる方法</h1>
 </div>
 
-<div class="intro">
-  💡 これは「投資」と「生活費削減」を同時に叶えるワザ。楽天グループの株主になると、楽天モバイルの30GBプランが<b>最大1年間無料</b>になる。月3,278円が消えるだけで、年間約4万円の節約！
+<!-- リード文：結論を最初に -->
+<div class="lead">
+  <div class="conclusion">
+    📌 結論：楽天グループの株を100株（約7万円）買うと、楽天モバイルが最大1年間無料になる。約1年9ヶ月で元が取れて、その後はずっとタダ！
+  </div>
+  <p>「スマホ代、毎月けっこうかかってるな…」そう感じている人に今すぐ試してほしい方法があります。投資と節約を同時に実現できる、楽天グループの株主優待活用術です。</p>
 </div>
 
-<!-- チャンス -->
-<div class="section-label">📊 今がチャンスな理由</div>
-<div class="chance-box">
-  <div class="chance-title">🔥 今年最安値付近！今が買い時</div>
-  <img src="chart.jpg" alt="楽天グループ株価チャート">
-  <div class="chance-text">
-    ▶ 現在株価 <b>708円</b>（2026年9月18日時点）<br>
-    ▶ 100株 = <b>わずか70,800円</b>で株主になれる<br>
-    ▶ 年初来チャートで見ても最安値圏に突入中。今が仕込み時！
-  </div>
-</div>
+<!-- セクション1：なぜ今なのか -->
+<div class="section">
+  <div class="section-heading">今が絶好のタイミングな理由</div>
+  <p class="body-text">楽天グループ（証券コード：4755）の株価が、2026年の年初来最安値圏まで下落しています。</p>
 
-<!-- 計算 -->
-<div class="section-label">🧮 回収シミュレーション</div>
-<div class="calc-box">
-  <div class="calc-title">💰 70,800円の投資でいつ元が取れる？</div>
-  <div class="calc-row">
-    <span class="label">楽天株 100株の購入費用</span>
-    <span class="value">70,800円</span>
-  </div>
-  <div class="calc-row">
-    <span class="label">楽天モバイル（30GB）の通常料金</span>
-    <span class="value">月3,278円</span>
-  </div>
-  <div class="calc-row">
-    <span class="label">年間節約額</span>
-    <span class="value">39,336円</span>
-  </div>
-  <div class="calc-row">
-    <span class="label">元が取れるまでの期間</span>
-    <span class="value big">約1年9ヶ月</span>
-  </div>
-</div>
-
-<!-- メリット -->
-<div class="section-label">✅ 回収後は？</div>
-<div class="card">
-  <div class="card-header">
-    <div class="card-header-text">
-      <div class="card-header-title">2年目以降はずっとタダ！</div>
-      <div class="card-header-sub">優待が続く限り永久に無料</div>
+  <div class="stock-box">
+    <div class="stock-title">📊 楽天グループ（TYO:4755）現在の株価</div>
+    <div class="stock-price-row">
+      <span class="s-label">現在株価（9月18日）</span>
+      <span class="s-value">708円</span>
+    </div>
+    <div class="stock-price-row">
+      <span class="s-label">100株の購入費用</span>
+      <span class="s-value">70,800円</span>
+    </div>
+    <div class="stock-note">
+      ▶ 年初来チャートで見ても最安値付近。今仕込めば節約効果＋値上がり益のダブル狙いができる！
     </div>
   </div>
-  <div class="card-body">
-    <div class="why-box">💡 約1年9ヶ月で初期費用を回収したら、あとは株を持ち続けるだけで毎月3,278円がずっと浮き続ける。10年持てば累計32万円超の節約！</div>
-    <div class="steps">
-      <div class="step"><div class="step-num">✓</div><div class="step-content">株価が上がれば株の値上がり益もGET</div></div>
-      <div class="step"><div class="step-num">✓</div><div class="step-content">楽天モバイルをすでに使っている人は即恩恵</div></div>
-      <div class="step"><div class="step-num">✓</div><div class="step-content">楽天モバイルへの乗り換えも同時に検討する価値あり<div class="ok">✅ 生活費削減 × 資産形成を同時に達成できる</div></div></div>
-    </div>
+
+  <p class="body-text">株価が低いということは、同じ100株でも今の方が安く買えるということ。優待を受け取りながら、将来的な株価上昇も期待できる今がベストタイミングです。</p>
+</div>
+
+<!-- セクション2：仕組みの説明 -->
+<div class="section">
+  <div class="section-heading">どんな仕組みなの？</div>
+  <p class="body-text">楽天グループの株を100株以上持っていると、「株主優待」として楽天モバイルの30GBプランが最大1年間無料でもらえます。</p>
+
+  <div class="point-box">
+    💡 株主優待とは：企業が株主に対してプレゼントするサービスのこと。楽天グループの場合、楽天モバイルのスマホプランを無料でくれる
+  </div>
+
+  <p class="body-text">楽天モバイルの30GBプランは通常<b>月3,278円（税込）</b>。これが最大12ヶ月無料になるので、<b>年間39,336円</b>もの節約になります。</p>
+
+  <div class="warn-box">
+    ⚠️ 優待を最大1年（12ヶ月）もらうには、12月末＋6月末の2回、100株以上保有が必要
   </div>
 </div>
 
-<!-- 買い方 -->
-<div class="section-label">📲 買い方・やり方</div>
+<!-- セクション3：回収シミュレーション -->
+<div class="section">
+  <div class="section-heading">元が取れるまでのシミュレーション</div>
+  <p class="body-text">「7万円の投資、いつ回収できるの？」と思う方へ。計算してみると意外と早いんです。</p>
 
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">1</div>
-    <div class="card-header-text">
-      <div class="card-header-title">楽天証券で口座を開く</div>
-      <div class="card-header-sub">まだ口座がない人はまずここから</div>
+  <div class="calc-box">
+    <div class="calc-title">💰 70,800円の投資はいつ回収できる？</div>
+    <div class="calc-row">
+      <span class="cl">楽天株 100株の購入費用</span>
+      <span class="cv">70,800円</span>
+    </div>
+    <div class="calc-row">
+      <span class="cl">楽天モバイル（30GB）通常料金</span>
+      <span class="cv">月3,278円</span>
+    </div>
+    <div class="calc-row">
+      <span class="cl">年間節約額</span>
+      <span class="cv">39,336円</span>
+    </div>
+    <div class="calc-row">
+      <span class="cl">元が取れるまでの期間</span>
+      <span class="cv big">約1年9ヶ月</span>
     </div>
   </div>
-  <div class="card-body">
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><div class="step-content">楽天証券の公式サイトまたはアプリから「口座開設」をタップ</div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-content">本人確認書類（マイナンバーカード等）を用意して申し込む</div></div>
-      <div class="step"><div class="step-num">3</div><div class="step-content">口座開設完了まで約1〜3営業日<div class="ok">✅ 口座開設・維持手数料は完全無料</div></div></div>
-    </div>
+
+  <div class="point-box">
+    ✅ 約1年9ヶ月で元が取れたあとは、株を持ち続けるだけで毎月3,278円がずっと無料！10年持てば累計32万円超の節約になる
   </div>
 </div>
 
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">2</div>
-    <div class="card-header-text">
-      <div class="card-header-title">口座に入金する</div>
-      <div class="card-header-sub">71,000円以上を入金しておこう</div>
-    </div>
-  </div>
-  <div class="card-body">
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><div class="step-content">楽天証券アプリを開き「入出金」→「入金」をタップ</div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-content">楽天銀行と連携（マネーブリッジ）していると即時入金が便利</div></div>
-      <div class="step"><div class="step-num">3</div><div class="step-content"><b>70,800円＋手数料分</b>として71,000円以上を目安に入金<div class="info">💡 国内株の売買手数料はゼロコース（無料）に設定しておこう</div></div></div>
-    </div>
-  </div>
-</div>
+<!-- セクション4：買い方 -->
+<div class="section">
+  <div class="section-heading">実際の買い方・手順</div>
+  <p class="body-text">楽天証券を使った具体的な手順を解説します。</p>
 
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">3</div>
-    <div class="card-header-text">
-      <div class="card-header-title">楽天グループ(4755)を100株買う</div>
-      <div class="card-header-sub">銘柄コード「4755」で検索</div>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <b>楽天証券で口座を開く</b><br>
+        公式サイトまたはアプリから「口座開設」をタップ。マイナンバーカードで申込み。約1〜3営業日で完了する。
+        <div class="step-sub">✅ 口座開設・維持手数料は完全無料</div>
+      </div>
     </div>
-  </div>
-  <div class="card-body">
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><div class="step-content">アプリ下部「取引」または検索バーで「<b>4755</b>」または「楽天グループ」と入力</div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-content">「現物買い」→数量「<b>100</b>」→注文方法「成行」または「指値」を選択</div></div>
-      <div class="step"><div class="step-num">3</div><div class="step-content">内容を確認して「注文確定」をタップ<div class="ok">✅ 約定（購入完了）したらあなたも楽天グループの株主！</div></div></div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <b>口座に71,000円以上を入金する</b><br>
+        アプリ「入出金」→「入金」から振込。楽天銀行と連携（マネーブリッジ）すると即時入金できて便利。
+      </div>
     </div>
-  </div>
-</div>
-
-<div class="card">
-  <div class="card-header">
-    <div class="card-num">4</div>
-    <div class="card-header-text">
-      <div class="card-header-title">優待を申し込む</div>
-      <div class="card-header-sub">権利確定後に届く案内から申請</div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <b>楽天グループ（4755）を100株買う</b><br>
+        検索バーに「<b>4755</b>」と入力 → 「現物買い」→ 数量「<b>100</b>」→ 「成行」または「指値」で注文確定。
+        <div class="step-sub">✅ 約定（購入完了）したら株主に！</div>
+      </div>
     </div>
-  </div>
-  <div class="card-body">
-    <div class="steps">
-      <div class="step"><div class="step-num">1</div><div class="step-content"><b>12月末</b>までに100株を保有していることが条件（権利確定日は12月最終営業日）</div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-content">翌年3月頃に楽天グループから株主優待の案内が届く</div></div>
-      <div class="step"><div class="step-num">3</div><div class="step-content">専用サイトから楽天モバイルの優待申込（申込期限：翌年5月中旬頃）<div class="ok">✅ 申込後は最大6ヶ月無料→継続保有で6ヶ月追加＝最大1年無料</div></div></div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <b>12月末まで100株を持ち続ける</b><br>
+        権利確定日（12月の最終営業日）に100株保有が必要。翌年3月頃に優待案内が届く。
+        <div class="step-warn">⚠️ 権利確定日の翌営業日に売ると権利がなくなるので注意</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <b>専用サイトから優待を申し込む</b><br>
+        翌年5月中旬までに申込み。楽天モバイルが最大6ヶ月無料に。6月末も保有継続でさらに6ヶ月追加→計12ヶ月無料！
+        <div class="step-sub">✅ 申込期限を忘れずに！（毎年5月中旬頃）</div>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- 注意事項 -->
-<div class="section-label">⚠️ 注意事項</div>
-<div class="caution-box">
-  <div class="caution-header">⚠️ 必ず確認してほしいこと</div>
-  <div class="caution-body">
+<!-- セクション5：注意点 -->
+<div class="section">
+  <div class="section-heading">知っておくべき注意点</div>
+  <div class="caution-list">
     <div class="caution-item">
-      <span class="caution-icon">▶</span>
-      <span><b>100株（1単元）以上の保有が必須。</b>50株や99株では優待対象外なので注意</span>
+      <span class="caution-icon">⚠</span>
+      <span><b>100株（1単元）必須。</b>99株以下では優待対象外になるため注意</span>
     </div>
     <div class="caution-item">
-      <span class="caution-icon">▶</span>
-      <span><b>権利確定日（12月末）に100株保有</b>していることが条件。買い急ぎに注意（権利付最終日の翌営業日に売ると権利はなくなる）</span>
+      <span class="caution-icon">⚠</span>
+      <span><b>最大1年にするには継続保有が必要。</b>12月末＋6月末の両方で同じ株主番号・100株以上の保有が条件</span>
     </div>
     <div class="caution-item">
-      <span class="caution-icon">▶</span>
-      <span><b>最大1年（12ヶ月）にするには継続保有が必要。</b>6月末時点でも同じ株主番号で100株以上を保有し続けること</span>
+      <span class="caution-icon">⚠</span>
+      <span><b>株価は変動する。</b>708円で買っても値下がりリスクはある。長期保有前提で考えること</span>
     </div>
     <div class="caution-item">
-      <span class="caution-icon">▶</span>
-      <span><b>株価は変動する。</b>708円で買っても値下がりリスクはある。あくまで長期保有前提で考えること</span>
+      <span class="caution-icon">⚠</span>
+      <span><b>楽天モバイルへの乗り換えが前提。</b>他社を使っている場合は乗り換えが必要</span>
     </div>
     <div class="caution-item">
-      <span class="caution-icon">▶</span>
-      <span><b>優待内容は変更・廃止になる可能性がある。</b>楽天グループの業績や方針によって変わることがある</span>
+      <span class="caution-icon">⚠</span>
+      <span><b>優待は変更・廃止になる可能性がある。</b>楽天グループの方針次第で内容が変わることがある</span>
     </div>
     <div class="caution-item">
-      <span class="caution-icon">▶</span>
-      <span><b>楽天モバイルの利用が前提。</b>すでに他社を使っている場合は乗り換えが必要</span>
-    </div>
-    <div class="caution-item">
-      <span class="caution-icon">▶</span>
-      <span><b>優待の申込期限あり。</b>案内が届いたら期限（5月中旬頃）内に必ず申し込むこと</span>
+      <span class="caution-icon">⚠</span>
+      <span><b>申込期限あり。</b>案内が届いたら5月中旬までに必ず申し込むこと</span>
     </div>
   </div>
 </div>
 
-<a href="https://lin.ee/tXRnQHW" class="line-btn2" target="_blank">👆 ここをタップでそうたに質問！</a>
+<!-- まとめ -->
+<div class="section">
+  <div class="section-heading">まとめ</div>
+  <p class="body-text">今回の内容をまとめると、次のとおりです。</p>
+
+  <div class="summary-box">
+    <div class="summary-title">📋 この記事のまとめ</div>
+    <div class="summary-item">
+      <span class="summary-check">✅</span>
+      <span>楽天グループ株100株（約70,800円）を買うだけでスマホ代が無料に</span>
+    </div>
+    <div class="summary-item">
+      <span class="summary-check">✅</span>
+      <span>楽天モバイル30GB（月3,278円）が最大12ヶ月無料になる</span>
+    </div>
+    <div class="summary-item">
+      <span class="summary-check">✅</span>
+      <span>約1年9ヶ月で元が取れ、以降はずっとスマホ代がタダ</span>
+    </div>
+    <div class="summary-item">
+      <span class="summary-check">✅</span>
+      <span>今の株価（708円）は年初来最安値圏で、今が仕込み時</span>
+    </div>
+    <div class="summary-item">
+      <span class="summary-check">✅</span>
+      <span>12月末まで保有し続けることが条件（売らずに持ち続ける）</span>
+    </div>
+  </div>
+
+  <p class="body-text">スマホ代の節約は毎月続く固定費削減。7万円の投資で年間4万円の節約ができるなら、やらない手はありません。まずは楽天証券の口座開設から始めてみましょう！</p>
+
+  <a href="https://lin.ee/tXRnQHW" class="cta" target="_blank">👆 ここをタップでそうたに質問！</a>
+</div>
 
 <div class="footer-note">
-  ※本ページの情報は2026年9月現在のものです。株価・優待内容は変更になる場合があります。<br>
+  ※本記事の情報は2026年9月現在のものです。株価・優待内容は変更になる場合があります。<br>
   ※投資判断はご自身の責任で行ってください。
 </div>
 
